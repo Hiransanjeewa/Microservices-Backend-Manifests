@@ -27,6 +27,7 @@ kind: Service
 metadata:
   name: api-server-svc
 spec:
+  type: LoadBalancer
   selector:
     app.kubernetes.io/name: api-server-app
   ports:
