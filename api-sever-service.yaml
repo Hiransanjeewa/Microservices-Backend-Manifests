@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: app
+metadata:
+  name:  api-server-app
+  labels:
+    app:  api-server-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app:  api-server-app
+  template:
+    metadata:
+      labels:
+        app:  api-server-app
+    spec:
+      containers:
+      - name:  api-server-app
+        image: hiransanjeewa/springboot-backend-config-server: api-gateway
+        ports:
+        - containerPort: 8060
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-server-svc
+spec:
+  selector:
+    app.kubernetes.io/name: api-server-app
+  ports:
+    - port: 80
+      targetPort: 8060

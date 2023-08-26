@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name:  register-service-app
-        image: hiransanjeewa/springboot-backend-config-server: register-service-app
+        image: hiransanjeewa/springboot-backend-config-server: register-service
         ports:
         - containerPort: 8085
 
