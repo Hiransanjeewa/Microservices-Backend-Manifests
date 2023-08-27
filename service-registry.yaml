@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
         - name: eureka
-          image: dailycodebuffer/service-registry
+          image: hiransanjeewa/springboot-backend-config-server:service-registry
           imagePullPolicy: Always
           ports:
             - containerPort: 8761
