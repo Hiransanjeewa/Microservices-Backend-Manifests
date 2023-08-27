@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name:  login-service-app
-        image: hiransanjeewa/springboot-backend-config-server: login-service
+        image: hiransanjeewa/springboot-backend-config-server:login-service
         ports:
         - containerPort: 8086
 
