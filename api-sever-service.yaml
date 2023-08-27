@@ -17,6 +17,7 @@ spec:
       containers:
       - name:  api-server-app
         image: hiransanjeewa/springboot-backend-config-server:api-gateway
+        imagePullPolicy: Always
         ports:
         - containerPort: 8060
 
