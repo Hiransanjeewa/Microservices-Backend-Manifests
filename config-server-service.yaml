@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: app
+kind: Deployment
 metadata:
   name:  config-server-app
   labels:
