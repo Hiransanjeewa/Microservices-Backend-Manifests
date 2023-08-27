@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name:  config-server-app
-        image: hiransanjeewa/springboot-backend-config-server: config-server
+        image: hiransanjeewa/springboot-backend-config-server:config-server
         ports:
         - containerPort: 8081
 
