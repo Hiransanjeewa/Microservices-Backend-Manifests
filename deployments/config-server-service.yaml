@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name:  config-server-app
-        image: hiransanjeewa/config-server:47
+        image: hiransanjeewa/config-server:49
         ports:
         - containerPort: 8081
 
