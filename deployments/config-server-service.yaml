@@ -12,10 +12,10 @@ spec:
   template:
     metadata:
       labels:
-        app:  config-server-app
+        app: cloud-config-server-app
     spec:
       containers:
-        - name: config-server-app
+        - name: cloud-config-server-app
           image: hiransanjeewa/springboot-backend-config-server:config-server
           imagePullPolicy: Always
           ports:
