@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: config-server-app
+  name: cloud-config-server-app
   labels:
-    app: config-server-app
+    app: cloud-config-server-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: config-server-app
+      app: cloud-config-server-app
   template:
     metadata:
       labels:
-        app: config-server-app
+        app:  config-server-app
     spec:
       containers:
         - name: config-server-app
@@ -31,4 +31,4 @@ spec:
     - targetPort: 9296
       port: 80
   selector:
-    app: config-server-app
+    app: cloud-config-server-app
