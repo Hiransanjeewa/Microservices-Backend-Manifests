@@ -18,7 +18,7 @@ spec:
       - name:  register-service-app
         image: hiransanjeewa/springboot-backend-config-server:register-service
         ports:
-        - containerPort: 8085
+        - containerPort: 9002
 
 ---
 
@@ -31,4 +31,4 @@ spec:
     app.kubernetes.io/name: register-service-app
   ports:
     - port: 80
-      targetPort: 8085
+      targetPort: 9002

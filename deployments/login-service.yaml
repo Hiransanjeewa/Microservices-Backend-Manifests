@@ -18,7 +18,7 @@ spec:
       - name:  login-service-app
         image: hiransanjeewa/springboot-backend-config-server:login-service
         ports:
-        - containerPort: 8086
+        - containerPort: 9001
 
 ---
 
@@ -31,4 +31,4 @@ spec:
     app.kubernetes.io/name: login-service-app
   ports:
     - port: 80
-      targetPort: 8086
+      targetPort: 9001

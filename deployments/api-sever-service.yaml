@@ -19,7 +19,7 @@ spec:
         image: hiransanjeewa/springboot-backend-config-server:api-gateway
         imagePullPolicy: Always
         ports:
-        - containerPort: 8060
+        - containerPort: 9191
 
 ---
 
@@ -33,4 +33,9 @@ spec:
     app.kubernetes.io/name: api-server-app
   ports:
     - port: 80
-      targetPort: 8060
+      targetPort: 9191
+      protocol: TCP
+
+
+
+
